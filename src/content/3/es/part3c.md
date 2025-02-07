@@ -134,6 +134,7 @@ npm install mongoose
 ```
 
 No agreguemos ningún código relacionado con Mongo a nuestro backend por el momento. En cambio, hagamos una aplicación de práctica creando un nuevo archivo, <i>mongo.js</i> en la raíz del backend de la aplicación de notas:
+crea un nuevo archivo con npm init, luego npm install, luego instala mongoose con npm install mongoose, luego creas el mongo.js y copias el siguiente codigo,
 
 ```js
 const mongoose = require('mongoose')
@@ -179,6 +180,7 @@ const password = process.argv[2]
 ```
 
 Cuando el código se ejecuta con el comando <i>node mongo.js yourPassword</i>, Mongo agregará un nuevo documento a la base de datos.
+En la consola debes ejecutar el comando node mongo.js espacio contraseña y ejecutar
 
 **NB:** Ten en cuenta que la contraseña es la contraseña creada para el usuario de la base de datos, no su contraseña de MongoDB Atlas. Además, si creaste una contraseña con caracteres especiales, deberas [codificar esa contraseña en la URL](https://docs.atlas.mongodb.com/troubleshoot-connection/#special-characters-in-connection-string-password).
 
